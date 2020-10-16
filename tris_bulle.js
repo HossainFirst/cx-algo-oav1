@@ -1,29 +1,28 @@
-let tab= [ 4, 6, 4, 9, 4, 10, 11];
+tab = [96,5,900,3,-800,2]
 
 
 function Tris_Bulle(tab){
 
-    let test = false;
-    let i = 1;
-    
+    let i = 0
     while(i<tab.length){
-        let j = 0
-        let n ;
-        while (j<tab.length){
-            if(tab[j-1]>tab[j]){
-                n=tab[j-1];
-                tab[j-1]=tab[j];
-                tab[j]=n;
-                
 
-            }
-            j++;
-        }
-        i++
-            
+       let fin = true
+       while(fin == true){
+           if(tab[i]>tab[i+1]){
+               let tmp = tab[i]
+               tab[i] = tab[i+1]
+               tab[i+1] = tmp
+               i = 0
+           }else{
+               fin = false
 
+           }
+
+       }
+
+
+       i++ 
     }
-    console.log(tab);
-        
+    console.log(tab)
 }
 Tris_Bulle(tab);
