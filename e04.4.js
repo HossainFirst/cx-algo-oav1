@@ -1,6 +1,6 @@
 let tab= [0, 4, 6, 4, 9, 4, 10];
 
-function Min(tab){
+function Max(tab){
     let max=tab[0];
 
     for(let i = 1; i<tab.length; i++ ){
